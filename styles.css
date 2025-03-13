@@ -1,0 +1,76 @@
+body{
+    font-family: "Copperplate", "Papyrus", fantasy;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: #b4b4b4;
+    text-align: center;
+    justify-content: center;
+}
+
+header{
+    display: block auto;
+    background-color: aliceblue;
+    margin: 0px;
+    padding: 1px;
+}
+
+img{
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+nav ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0 auto; /* Centers the list */
+    display: flex;
+    justify-content: center; /* Ensures items are centered */
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(84, 84, 209);
+
+}
+
+
+
+
+/*Custom Class Selectors*/
+
+
+#finance-main:hover{
+    transform: scale(1.01);
+    transition: transform 1s ease-in-out, box shadow 1s ease-in-out;
+    box-shadow: 0 4px 6px black;
+    animation: pulse 1s infinite;
+}
+
+#solar-main:hover{
+    transform: scale(1.01);
+    transition: transform 1s ease-in-out, box shadow 1s ease-in-out;
+    box-shadow: 0 4px 6px black;
+    animation-name: pulse;
+    animation: pulse 1.5s infinite;
+}
+
+
+
+/* Media and KeyFrames*/
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
