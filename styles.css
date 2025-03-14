@@ -27,11 +27,11 @@
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    background: linear-gradient(90deg, #f5f8ff, #2364fc, #f5f8ff);
+    background: linear-gradient(90deg, #ffffff, #000000, #ffffff);
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientMove 5s infinite ease-in-out;
+    animation: gradientMove 15s infinite linear;
 
 }
 
@@ -53,5 +53,5 @@
 }
 
 @keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
+    0% { background-position: 0% 25%; }
+    100% { background-position: 100% 25%; }
