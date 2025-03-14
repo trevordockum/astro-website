@@ -1,63 +1,6 @@
-body{
-    font-family: "Copperplate", "Papyrus", fantasy;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    background-color: #b4b4b4;
-    text-align: center;
-    justify-content: center;
-}
-
-header{
-    display: block auto;
-    background-color: aliceblue;
-    margin: 0px;
-    padding: 1px;
-}
-
-img{
-    border-radius: 1rem;
-    margin: 1rem 1rem;
-}
-
-h2{
-    font-weight: lighter;
-}
-
-nav ul {
-    list-style: none; /* Remove bullets */
-    padding: 0;
-    margin: 0 auto; /* Centers the list */
+.finance-main:hover {
     display: flex;
-    justify-content: center; /* Ensures items are centered */
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-    text-align: center;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(84, 84, 209);
-
-}
-
-
-
-
-/*Custom Class Selectors*/
-
-
-#finance-main:hover{
-    transform: scale(1.01);
-    transition: transform 1s ease-in-out, box shadow 1s ease-in-out;
-    box-shadow: 0 4px 6px black;
-    animation: pulse 1s infinite;
-}
-
-#solar-main:hover{
+    justify-content: center;
     transform: scale(1.01);
     transition: transform 1s ease-in-out, box shadow 1s ease-in-out;
     box-shadow: 0 4px 6px black;
@@ -65,12 +8,50 @@ nav ul li a {
     animation: pulse 1.5s infinite;
 }
 
+.solar-main:hover {
+    display: flex;
+    justify-content: center;
+    transform: scale(1.01);
+    transition: transform 1s ease-in-out, box shadow 1s ease-in-out;
+    box-shadow: 0 4px 6px black;
+    animation-name: pulse;
+    animation: pulse 1.5s infinite;
+}
+
+.t-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vw;
+    width: 100vw;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #f5f8ff, #2364fc, #f5f8ff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s infinite ease-in-out;
+
+}
 
 
 /* Media and KeyFrames*/
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
