@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro Consulting</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgb(228, 228, 228);">
+<body>
+    <!-- <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgb(228, 228, 228);">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/Astro Logo.png" alt="Logo" width="30" height="24"
@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="solar.html">Solar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="mortgages.html">Mortgages</a>
+                        <a class="nav-link" href="mortgages.html">Mortgages</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -54,15 +54,32 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <main>
-        <div class="t-center">
-            <h2 class="text-center">Coming Soon..</h2>
+        <div class="contact-container contact-form-body">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Contact Us</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="f6cf863f-f205-4a2b-9e67-4ed8b6c0985c">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required">
+                    <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required">
+                    <input type="text" name="phone number" placeholder="Your Phone Number" class="contact-inputs" required">
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit <img src="images/arrow.png" class="arrow-btn"></button>
+                </form>
+            <div class="contact-right">
+                <a href="index.html"><img src="images/Astro Logo.png" alt="" class="contact-logo"></a>
+
+            </div>
         </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>
+
+f6cf863f-f205-4a2b-9e67-4ed8b6c0985c

@@ -1,4 +1,168 @@
-.finance-main:hover {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact-form-body{
+    font-family: 'Outfit';
+    background: linear-gradient(#c5d0dc, #fcfdfc);
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.arrow-btn{
+    height: 15px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: #1a2b52;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #1a2b52;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #9f62e4;
+}
+
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #000000;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #c5d0dc,#fcfdfc);
+}
+
+.contact-logo{
+    height: 350px;
+    width: 350px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px #000000;
+}
+
+.contact-logo:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out, 1s ease-in-out;
+    animation-name: pulse;
+    animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+} */
+
+.contact-btn{
+    font-weight: 600;
+    color: #000000;
+}
+
+.about-us{
+    display: flex;
+    align-items: center;
+
+}
+
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+.t-center h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vw;
+    width: 100vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #000000, #ffffff);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 10s infinite linear;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 25%; }
+    100% { background-position: 100% 25%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .finance-main:hover {
     display: flex;
     justify-content: center;
     transform: scale(1.01);
@@ -18,30 +182,6 @@
     animation: pulse 1.5s infinite;
 }
 
-.t-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vw;
-    width: 100vw;
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    background: linear-gradient(90deg, #ffffff, #000000, #ffffff);
-    background-size: 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientMove 15s infinite linear;
-
-}
-
-h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-
-/* Media and KeyFrames*/
-
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -54,9 +194,6 @@ h1{
     100% {
         transform: scale(1);
     }
-}
+} */
 
-@keyframes gradientMove {
-    0% { background-position: 0% 25%; }
-    100% { background-position: 100% 25%; }
-}
+
